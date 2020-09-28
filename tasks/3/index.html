@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Covid19 Pre-screening Form</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-
+        scale=1.0"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1><strong>Covid19 Pre-screening Form</strong></h1>
+    </header>
+    <br />
+    <!-- method="get"
+      name="Covid_Form" -->
+
+    <form id="form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="get">
+      <strong>
+        <h3>
+          Due to the ongoing COVID-2019 Pandemic, all caregivers/patients are
+          required to complete this form prior to being seen at any medical
+          facility. Your visit is subject to approval upon completion of this
+          form. Effective immediately, only 1 adult is to accompany our patient
+          visits (except for newborn visits), accompanying children who are not
+          being seen as patients are also restricted. These rules are being
+          enforced to keep our patients and staff as well as the rest of your
+          loved ones safe and healthy.
+        </h3></strong
+      >
+      <br />
+      <table>
+        <tr>
+          <td>
+            Has the patient, caregiver or anyone in your household have
+            travelled outside the SA in the past 2 weeks (14 days) if yes,
+            where?
+          </td>
+          <td>
+            <input
+              id="query1"
+              type="text"
+              name="Has the patient, caregiver or anyone in your household have travelled outside the US in the past 2 weeks (14 days) if yes, where?"
+              size="40"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Has the patient, caregiver or anyone in your household have
+            travelled outside of Gauteng in the past 2 weeks (14 days) if
+            yes,where?
+          </td>
+          <td>
+            <input
+              type="text"
+              name="Has the patient, caregiver or anyone in your household have travelled outside the Gauteng in the past 2 weeks (14 days) if yes, where?"
+              size="40"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            In the past 2 weeks (14 days) has the patient, caregiver or anyone
+            in your household had contact with any person suspected to have<br />
+            contracted coronavirus (COVID-19)? Including being tested for
+            COVID-19, & being in self isolation for COVID-19
+          </td>
+
+          <td>
+            <input
+              type="text"
+              name="In the past 2 weeks (14 days) has the patient, caregiver or anyone
+              in your household had contact with any person suspected to have
+              contracted coronavirus (COVID-19)? Including being tested for
+              COVID-19, & being in self isolation for COVID-19"
+              size="40"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            In the past 2 weeks (14 days) has the patient, caregiver or anyone
+            in your household had contact with any person confirmed to have
+            <br />
+            contracted coronavirus (COVID-19)?
+          </td>
+          <td>
+            <input
+              type="text"
+              name="In the past 2 weeks (14 days) has the patient, caregiver or anyone
+                in your household had contact with any person confirmed to have
+                contracted 
+                coronavirus (COVID-19)?"
+              size="40"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Has the patient or caregiver currently been exposed to someone with
+            flu-like symptoms (cough, shortness of breath or fever)?
+          </td>
+          <td>
+            <input
+              type="text"
+              name="Has the patient or caregiver currently been exposed to someone with flu-like 
+                symptoms (cough, shortness of breath or fever)??"
+              size="40"
+            />
+          </td>
+        </tr>
+        <tr></tr>
+        <tr>
+          <td>
+            In the last 72hours has the patient or caregiver experienced..
+          </td>
+          <td>
+            <input type="checkbox" id="FEVER" name="symptoms" value="fever" />
+            <label for="fever"> fever</label><br />
+            <input
+              type="checkbox"
+              id="coughing"
+              name="symptoms"
+              value="Coughing"
+            />
+            <label for="coughing"> Coughing</label><br />
+            <input
+              type="checkbox"
+              id="Sorethroat"
+              name="symptoms"
+              value="Sorethroat"
+            />
+            <label for="Sorethroat"> Sorethroat</label><br />
+            <input
+              type="checkbox"
+              id="breathing"
+              name="symptoms"
+              value="breathing issues"
+              onclick="validateForm()"
+            />
+            <label for="fever">
+              difficulty breathing, shortness of breath of wheezing </label
+            ><br />
+            <input
+              type="checkbox"
+              id="muscle aches"
+              name="symptoms"
+              value="muscle aches"
+            />
+            <label for="fever"> muscle aches </label><br />
+            <input
+              type="checkbox"
+              id="stomach pains"
+              name="symptoms"
+              value="stomach pains"
+            />
+            <label for="fever"> stomach pains </label><br />
+            <input
+              type="checkbox"
+              id="vomiting or diarrhea"
+              name="symptoms"
+              value="vomiting or diarrhea"
+            />
+            <label for="fever"> vomiting or diarrhea </label><br />
+          </td>
+        </tr>
+      </table>
+
+      <button type="submit">Submit</button>
+
+      <p></p>
+    </form>
+    <div class="footer">
+      <a href="">
+        <img class="logo" src="assets/img/logo-black.png" alt="Cyber" />
+      </a>
+    </div>
+  </body>
+</html>

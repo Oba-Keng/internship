@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-image: url("assets/img/cyber-scurity.jpg");
+  color: #ffffff;
+  height: 200px;
+}
+
+.content {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.content2 {
+  background: blue;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  background-color: yellowgreen;
+}
+
+.grid header {
+  height: 200px;
+  width: 100%;
+  background: grey;
+  color: white;
+  margin-bottom: -30px;
+}
+
+.container {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 200px;
+  width: 100%;
+  background: grey;
+  color: white;
+}
+
+.latest-news {
+  border: 1px solid orange;
+}
+
+/* nav {
+  
+} */
+
+img {
+  width: 40;
+  height: 40px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 40px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 20px;
+  line-height: 80px;
+}
+
+nav a {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+a.active,
+a:hover {
+  border: 1px solid white;
+  transition: 0.5s;
+}
+
+nav #icon {
+  color: black;
+  font-size: 30px;
+  line-height: 80px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 1048px) {
+  img.logo {
+    font-size: 35px;
+    padding-left: 60px;
+  }
+
+  nav ul {
+    margin-right: 20px;
+  }
+
+  nav a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 909px) {
+  nav #icon {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2f3640;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+
+  a.active,
+  a:hover {
+    border: none;
+    color: #3498db;
+  }
+
+  nav ul.show {
+    left: 0;
+  }
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.contact {
+  margin-left: 900px;
+}
+
+.recent {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background: blue;
+  margin-right: 80px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.recent2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background: orange;
+  margin-right: 80px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  color: white;
+}
